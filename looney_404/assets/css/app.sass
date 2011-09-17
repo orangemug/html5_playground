@@ -1,0 +1,308 @@
+$STAGE_W: 700px
+$STAGE_H: 500px
+
+$C0_DIAMETER: 2900
+$C1_DIAMETER: 2100
+$C2_DIAMETER: 1500
+$C3_DIAMETER: 1100
+$C4_DIAMETER: 900
+$C5_DIAMETER: 750
+$C6_DIAMETER: 550
+$C7_DIAMETER: 400
+$C8_DIAMETER: 310
+$C9_DIAMETER: 240
+$C10_DIAMETER: 200
+$C11_DIAMETER: 180
+
+$COLOR_A: #FFF100
+$COLOR_B: #FF2000
+
+body
+  margin: 0
+
+.looney-container
+  position: relative
+  min-height: $STAGE_H
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+.looney
+  margin: 0 auto
+  top: 50%
+  left: 50%
+  margin-top: - ($STAGE_H / 2)
+  margin-left: - ($STAGE_W / 2)
+  background-color: $COLOR_B
+  width: $STAGE_W
+  height: $STAGE_H
+  //overflow: hidden
+  position: relative
+
+.cage
+  position: relative
+  top: ($STAGE_H - $C0_DIAMETER)/2
+  left: ($STAGE_W - $C0_DIAMETER)/2
+  width:  $C0_DIAMETER
+  height: $C0_DIAMETER
+  
+
+.circle
+  background: -webkit-gradient(radial, center center, 0, center center, $C1_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C1_DIAMETER $C1_DIAMETER, $COLOR_A, $COLOR_B)
+  position: relative
+
+.one.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C2_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C2_DIAMETER $C2_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C1_DIAMETER
+    height: $C1_DIAMETER
+    margin: ($C0_DIAMETER - $C1_DIAMETER)/2
+    -webkit-border-radius: $C1_DIAMETER
+
+.two.filler
+  //display: none
+  background: -webkit-gradient(radial, center center, 0, center center, $C3_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C3_DIAMETER $C3_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C2_DIAMETER
+    height: $C2_DIAMETER
+    margin: ($C1_DIAMETER - $C2_DIAMETER)/2
+    -webkit-border-radius: $C2_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.three.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C4_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C4_DIAMETER $C4_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C3_DIAMETER
+    height: $C3_DIAMETER
+    margin: ($C2_DIAMETER - $C3_DIAMETER)/2
+    -webkit-border-radius: $C3_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.four.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C5_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C5_DIAMETER $C5_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C4_DIAMETER
+    height: $C4_DIAMETER
+    margin: ($C3_DIAMETER - $C4_DIAMETER)/2
+    -webkit-border-radius: $C4_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.five.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C6_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C6_DIAMETER $C6_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C5_DIAMETER
+    height: $C5_DIAMETER
+    margin: ($C4_DIAMETER - $C5_DIAMETER)/2
+    -webkit-border-radius: $C5_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.six.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C7_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C7_DIAMETER $C7_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C6_DIAMETER
+    height: $C6_DIAMETER
+    margin: ($C5_DIAMETER - $C6_DIAMETER)/2
+    -webkit-border-radius: $C6_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.seven.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C8_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C8_DIAMETER $C8_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C7_DIAMETER
+    height: $C7_DIAMETER
+    margin: ($C6_DIAMETER - $C7_DIAMETER)/2
+    -webkit-border-radius: $C7_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.eight.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C9_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C9_DIAMETER $C9_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C8_DIAMETER
+    height: $C8_DIAMETER
+    margin: ($C7_DIAMETER - $C8_DIAMETER)/2
+    -webkit-border-radius: $C8_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.nine.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C10_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C10_DIAMETER $C10_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C9_DIAMETER
+    height: $C9_DIAMETER
+    margin: ($C8_DIAMETER - $C9_DIAMETER)/2
+    -webkit-border-radius: $C9_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.ten.filler
+  background: -webkit-gradient(radial, center center, 0, center center, $C11_DIAMETER, from($COLOR_A), to($COLOR_B))
+  background-image: -webkit-radial-gradient(center, $C11_DIAMETER $C11_DIAMETER, $COLOR_A, $COLOR_B)
+  .circle
+    width: $C10_DIAMETER
+    height: $C10_DIAMETER
+    margin: ($C9_DIAMETER - $C10_DIAMETER)/2
+    -webkit-border-radius: $C10_DIAMETER
+    //box-shadow: inset 0 0 30px #9D2610
+
+.filler
+  position: relative
+
+.one.filler
+  -webkit-border-radius: $C1_DIAMETER
+.two.filler
+  -webkit-border-radius: $C2_DIAMETER
+.three.filler
+  -webkit-border-radius: $C3_DIAMETER
+.four.filler
+  -webkit-border-radius: $C4_DIAMETER
+.five.filler
+  -webkit-border-radius: $C5_DIAMETER
+.six.filler
+  -webkit-border-radius: $C6_DIAMETER
+.seven.filler
+  -webkit-border-radius: $C7_DIAMETER
+.eight.filler
+  -webkit-border-radius: $C8_DIAMETER
+.nine.filler
+  -webkit-border-radius: $C9_DIAMETER
+.ten.filler
+  -webkit-border-radius: $C10_DIAMETER
+
+.filler
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+.middle
+  background-color: black
+  -webkit-border-radius: $C5_DIAMETER
+
+
+.production-text
+  left: ($STAGE_W / 2) - (400px / 2)
+  text-align: center
+  width: 400px
+  position: absolute
+  font-family: 'Candal', sans-serif
+  top: 390px
+  text-shadow: 2px 2px 2px #B92611
+  font-size: 25px
+  color: #F8F790
+
+.color-text
+  left: ($STAGE_W / 2) - (400px / 2)
+  text-align: center
+  width: 400px
+  position: absolute
+  font-family: 'Candal', sans-serif
+  top: 425px
+  text-shadow: 2px 2px 2px #B92611
+  font-size: 20px
+  color: #F8F790
+
+
+.title
+  left: ($STAGE_W / 2) - (600px / 2) + 80px
+  text-align: center
+  width: 600px
+  position: absolute
+  font-family: 'Bowlby One', sans-serif
+  top: 40px
+  text-shadow: 2px 2px 2px #B92611
+  font-size: 55px
+  color: #F8F790
+
+  .char1
+    -webkit-transform: translate(0px, 20px) rotate(-10deg)
+    position: absolute
+  .char2
+    -webkit-transform: translate(33px, 15px) rotate(-4deg)
+    position: absolute
+  .char3
+    -webkit-transform: translate(67px, 9px) rotate(-1deg)
+    position: absolute
+  .char4
+    -webkit-transform: translate(107px, 7px) rotate(-11deg)
+    position: absolute
+  .char5
+    // The space
+  .char6
+    -webkit-transform: translate(175px, 5px) rotate(-1deg)
+    position: absolute
+  .char7
+    -webkit-transform: translate(231px, 5px) rotate(-1deg)
+    position: absolute
+  .char8
+    -webkit-transform: translate(249px, 9px) rotate(-11deg)
+    position: absolute
+  .char9
+    -webkit-transform: translate(285px, 12px) rotate(-1deg)
+    position: absolute
+  .char10
+    -webkit-transform: translate(324px, 14px) rotate(-1deg)
+    position: absolute
+  .char11
+    -webkit-transform: translate(346px, 15px) rotate(-1deg)
+    position: absolute
+  .char12
+    -webkit-transform: translate(391px, 22px) rotate(-1deg)
+    position: absolute
+
+
+@-webkit-keyframes show
+  0%, 80%
+    opacity: 0
+  100%
+    opacity: 1
+
+.title-group
+  opacity: 1
+  -webkit-animation-name: show
+  -webkit-animation-iteration-count: 1
+  -webkit-animation-timing-function: easeout
+  -webkit-animation-duration: 1.8s
+
+
+
+@-webkit-keyframes grow
+  0%, 50%
+    -webkit-transform: rotate(0deg) scale(0)
+  100%
+    -webkit-transform: rotate(5deg) scale(1)
+
+
+.logo
+  -webkit-transform: rotate(5deg) scale(1)
+  -webkit-animation-name: grow
+  -webkit-animation-iteration-count: 1
+  -webkit-animation-timing-function: easeout
+  -webkit-animation-duration: 2s
+  position: absolute
+  left: ($STAGE_W / 2) - (297px / 2)
+  top: ($STAGE_H / 2) - (100px / 2) + 5px
+  width: 297px
+  height: 100px
+  // ----------------
+  color: #F8F790
+  text-align: center
+  font-family: 'Bowlby One', sans-serif
+  font-size: 60px
+  text-shadow: 2px 2px 2px #B92611
+
+
+.badger
+  -webkit-transform: rotate(5deg) scale(1)
+  position: absolute
+  top: 60px
+  left: 85px
+  height: 60px
+
+

@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Looney 404</title>
+  <!-- http://developer.apple.com/library/IOS/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!--
+    link: <http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles>/MetaTags.html
+    content: 'black-translucent' or 'black'
+  -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- http://www.sencha.com/forum/showthread.php?119233-iPad-with-iOS-4.2.1-how-to-get-apple-touch-startup-image-to-work-in-landscape-mode -->
+  <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="ios-splash_landscape.png">
+  <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="ios-splash.png">
+
+  <!-- http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta-viewport -->
+  <link rel="apple-touch-icon" href="assets/images/icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png" />
+
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Candal' rel='stylesheet' type='text/css'>
+  <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="looney-container">
+    <div class="looney">
+      <div class="cage">
+        <div class="filler one">
+          <div class="circle"><div class="filler two">
+            <div class="circle"><div class="filler three">
+              <div class="circle"><div class="filler four">
+                <div class="circle"><div class="filler five">
+                  <div class="circle"><div class="filler six">
+                    <div class="circle"><div class="filler seven">
+                      <div class="circle"><div class="filler eight">
+                        <div class="circle"><div class="filler nine">
+                          <div class="circle"><div class="filler ten">
+                            <div class="circle"><div class="filler middle">
+                            </div></div>
+                          </div></div>
+                        </div></div>
+                      </div></div>
+                    </div></div>
+                  </div></div>
+                </div></div>
+              </div></div>
+            </div></div>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="title-group">
+        <div class="title">PAGE MISSING</div>
+        <div class="production-text">A VALOBOX PRODUCTION</div>
+        <div class="color-text">Colored by Badgers</div>
+      </div>
+      <div class="logo">404!</div>
+    </div>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="vendor/js/jquery.lettering-0.6.1.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // TODO: Need to start the webkit keyframe animation after this
+    $(".title").lettering();
+
+    // Make the page static on iOS
+    $(document).bind('touchmove', function(e) {
+      e.preventDefault()
+    })
+  });
+</script>
+</body>
+</html>
