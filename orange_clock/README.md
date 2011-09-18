@@ -2,6 +2,9 @@
 
 An 'over the top' clock to demo some touch screen functionality and css3 transitions.
 
+## See it
+
+<http://orangemug.github.com/html5_playground/orange_clock>
 ![screenshot](https://github.com/orangemug/html5_playground/raw/master/orange_clock/assets/images/screenshot.png)
 
 ## Aims
