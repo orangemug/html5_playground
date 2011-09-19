@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pong</title>
+
+  <!-- http://developer.apple.com/library/IOS/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!--
+    link: <http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles>/MetaTags.html
+    content: 'black-translucent' or 'black'
+  -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- http://www.sencha.com/forum/showthread.php?119233-iPad-with-iOS-4.2.1-how-to-get-apple-touch-startup-image-to-work-in-landscape-mode -->
+  <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="ios-splash_landscape.png">
+  <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="ios-splash.png">
+
+  <!-- http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta-viewport -->
+  <link rel="apple-touch-icon" href="assets/images/icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png" />
+
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <div class="board">
+    <div class="player1">
+      <div class="score">5</div>
+      <div class="paddle-holder">
+        <div class="paddle"></div>
+      </div>
+    </div>
+    <div class="player2">
+      <div class="score">4</div>
+      <div class="paddle-holder">
+        <div class="paddle"></div>
+      </div>
+    </div>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="vendor/js/v2d/build/v2d.js"></script>
+<script src="vendor/js/dsp/dsp.js"></script>
+<script src="vendor/js/reqAnimFrame.js"></script>
+<script src="assets/js/sound.js"></script>
+<script src="assets/js/stage.js"></script>
+<script src="assets/js/ball.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+
+  $(document).ready(function() {
+    new App()
+  })
+
+/*
+  $(document).ready(function() {
+    var p2Holder      = $('.player2 .paddle-holder');
+    var p2Paddle      = p2Holder.find('.paddle');
+    var p2HolderPos   = p2Holder.offset();
+    var p2HolderWidth = p2Holder.width();
+    var p2PaddleWidth = p2Paddle.width();
+
+    $('.player2').bind('mousemove touchmove', function(e) {
+      var newPos = e.clientX - p2HolderPos.left - p2PaddleWidth/2;
+
+      var lowerBound = p2HolderPos.left;
+      var upperBound = p2HolderWidth-p2PaddleWidth;
+
+      // Check bounds
+      if(newPos < lowerBound) {
+        newPos = lowerBound;
+      } else if (newPos > upperBound) {
+        newPos = upperBound;
+      }
+
+      // Move
+      console.log(e.clientX - p2HolderPos.left)
+      p2Paddle.css({
+        'left': newPos
+      })
+
+      return false
+    })
+
+  })
+*/
+</script>
+</body>
+</html>

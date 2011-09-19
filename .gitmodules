@@ -1,0 +1,6 @@
+[submodule "pong/vendor/js/v2d"]
+	path = pong/vendor/js/v2d
+	url = git@github.com:orangemug/v2d.git
+[submodule "pong/vendor/js/dsp"]
+	path = pong/vendor/js/dsp
+	url = https://github.com/corbanbrook/dsp.js.git

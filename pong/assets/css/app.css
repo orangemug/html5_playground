@@ -1,0 +1,65 @@
+.board {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.player1 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 50%;
+  background-color: blue;
+}
+
+.player2 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  bottom: 0px;
+  background-color: red;
+}
+
+.score {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.player1 .score {
+  -webkit-transform: rotate(180deg);
+}
+
+.paddle-holder {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  height: 40px;
+  background-color: white;
+}
+
+.player1 .paddle-holder {
+  top: 20px;
+}
+
+.player2 .paddle-holder {
+  bottom: 20px;
+}
+
+.paddle {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: green;
+}
+
+.player2 .paddle {
+  left: 280px;
+}
